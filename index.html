@@ -3,13 +3,130 @@
   <head>
     <meta charset="UTF-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <link rel="stylesheet" href="../dist/css/main.css">
-    <script defer="defer" src="../dist/js/main.js"></script>
-    <title>Coming Soon</title>
+    <link rel="stylesheet" href="../css/all.css"/>
+    <link rel="stylesheet" href="../css/main.css"/>
+    <script defer="defer" src="../js/all.min.js"></script>
+    <script defer="defer" src="../js/main.js"></script>
+    <title>Portfolio</title>
   </head>
   <body>
-    <div class="coming">
-      <h1 class="coming-head"><span>Coming</span> Soon</h1>
+    <div class="nav">
+      <h1><a class="logo" href="index.html">I.K</a></h1>
+      <div class="links-container">
+        <ul class="links">
+          <li><a class="scroll active" href="#index">Home</a></li>
+          <li><a class="scroll" href="#about">About Me</a></li>
+          <li><a class="scroll" href="#portfolio">Portfolio</a></li>
+          <li><a class="scroll" href="#contact">Contact Me</a></li>
+        </ul>
+      </div>
     </div>
+    <div class="home-section" id="home">
+      <div class="content">
+        <h1>Hello, my name is Ibrahim Khaled</h1>
+        <p class="typewriter"></p><img src="images/layout2.png" alt="Illustraition"/>
+      </div><a class="scroll" href="#about"><i class="fa fa-arrow-down scroll"></i></a>
+    </div>
+    <div class="about-section" id="about">
+      <h2>Let me tell you semething</h2>
+      <p>I've been in this field for more than 2 years I gained a lot of skills that make me able to build awesome, Interactive, and modern websites</p><span>My skills</span>
+      <div class="skills">
+        <div class="front">
+          <p>Front-End</p>
+          <div class="spans"><span><i class="fab fa-html5"></i></span><span><i class="fab fa-css3"></i></span><span><i class="fab fa-js"></i></span><span><i class="fab fa-vuejs"></i></span><span><i class="fab fa-sass"></i></span><span><i class="fab fa-bootstrap"></i></span></div>
+        </div>
+        <div class="back">
+          <p>Back-End</p>
+          <div class="spans"><span><i class="fab fa-php"></i></span><span><i class="fab fa-wordpress"></i></span><span><i class="fa fa-database"></i></span></div>
+        </div>
+        <div class="tools">
+          <p>Tools I Use</p>
+          <div class="spans"><span><i class="fab fa-git"></i></span><span><i class="fab fa-github"></i></span><span><i class="fab fa-gulp"></i></span></div>
+        </div>
+      </div>
+    </div>
+    <div class="portfolio-section" id="portfolio">
+      <h2>My Recent Work</h2>
+      <div class="grid">
+        <div class="img-cover"><img src="images/9.png" alt="Project"/>
+          <div class="content">
+            <h3>Gym Website</h3><a class="live" href="https://power-room.netlify.app/">Project Live</a><a class="code" href="">Github Page</a>
+          </div>
+        </div>
+        <div class="img-cover"><img src="images/8.png" alt="Project"/>
+          <div class="content">
+            <h3>Social media dasshboard</h3><a class="live" href="https://social-m-dashboard.netlify.app/">Project Live</a><a class="code" href="">Github Page</a>
+          </div>
+        </div>
+        <div class="img-cover"><img src="images/7.png" alt="Project"/>
+          <div class="content">
+            <h3>Bootstrap4 Website</h3><a class="live" href="https://elitecorp-demo.netlify.app/">Project Live</a><a class="code" href="">Github Page</a>
+          </div>
+        </div>
+        <div class="img-cover"><img src="images/6.png" alt="Project"/>
+          <div class="content">
+            <h3>Bootstrap3 Website</h3><a class="live" href="https://fluent-end.netlify.app/">Project Live</a><a class="code" href="">Github Page</a>
+          </div>
+        </div>
+        <div class="img-cover"><img src="images/5.png" alt="Project"/>
+          <div class="content">
+            <h3>Huddle Landing Page</h3><a class="live" href="https://huddle-page2.netlify.app/">Project Live</a><a class="code" href="">Github Page</a>
+          </div>
+        </div>
+        <div class="img-cover"><img src="images/4.png" alt="Project"/>
+          <div class="content">
+            <h3>Huddle Website (Full page)</h3><a class="live" href="https://huddle-page-cs.netlify.app/">Project Live</a><a class="code" href="">Github Page</a>
+          </div>
+        </div>
+      </div><a class="v-more" href="#!">View More!</a>
+    </div>
+    <div class="contact-section" id="contact">
+      <h2>Contact Me Now &#128512;</h2>
+      <div class="form-box">
+        <h4>Please Fill These Feilds</h4>
+        <form action="">
+          <div class="input-box">
+            <label for="name">Your Name</label>
+            <input type="text" id="f-name"/>
+          </div>
+          <div class="input-box">
+            <label for="email">Your Email</label>
+            <input type="email" id="email"/>
+          </div>
+          <div class="input-box">
+            <label for="message">Type Your Message</label>
+            <textarea name="message" id="message" rows="5"></textarea>
+          </div>
+          <input class="send-btn" type="submit" value="Send Message"/>
+        </form>
+      </div>
+    </div>
+    <footer>
+      <h3>Copyrights &copy; 2020 Reserved by the owner</h3>
+      <div class="social-fixed">
+        <ul>
+          <li><i class="fab fa-facebook-square"></i></li>
+          <li><i class="fab fa-github-square"></i></li>
+          <li><i class="fab fa-linkedin"></i></li>
+          <li><i class="fab fa-twitter-square"></i></li>
+          <li><i class="fab fa-instagram"></i></li>
+        </ul>
+      </div>
+    </footer>
+    <div class="settings-box">
+      <h4>Choose Your Settings</h4>
+      <hr/>
+      <div class="lang">
+        <h6>Select a language</h6>
+        <button class="ar">Arabic<span></span></button>
+        <button class="en">English<span></span></button>
+      </div>
+      <hr/>
+      <div class="status">
+        <h6>Dark Or Light?</h6>
+        <button class="dark"> <span></span></button>
+      </div>
+      <div class="gear"><i class="fa fa-cogs"></i></div>
+    </div><a class="goTop" href="#home"><i class="fa fa-arrow-up"></i></a>
   </body>
 </html>
