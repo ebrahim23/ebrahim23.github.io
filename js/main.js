@@ -72,35 +72,35 @@ const gear = document.querySelector('.gear').addEventListener('click', function(
 })
 
 // Images Popups
-let works = document.querySelectorAll('.grid img')
-works.forEach(img => {
-    img.addEventListener('click', (e) => {
-        let overlay = document.createElement('div')
-        overlay.className = 'overlay'
-        document.body.appendChild(overlay)
+// let works = document.querySelectorAll('.grid img')
+// works.forEach(img => {
+//     img.addEventListener('click', (e) => {
+//         let overlay = document.createElement('div')
+//         overlay.className = 'overlay'
+//         document.body.appendChild(overlay)
 
-        let popup = document.createElement('div')
-        popup.className = 'popup'
+//         let popup = document.createElement('div')
+//         popup.className = 'popup'
 
-        if(img.alt !== null){
-            let title = document.createElement('h3')
-                text = document.createTextNode(img.alt)
-            title.appendChild(text)
-            popup.appendChild(title)
-        }
+//         if(img.alt !== null){
+//             let title = document.createElement('h3')
+//                 text = document.createTextNode(img.alt)
+//             title.appendChild(text)
+//             popup.appendChild(title)
+//         }
 
-        let popImg = document.createElement('img')
-        popImg.src = img.src
-        popup.appendChild(popImg)
-        document.body.appendChild(popup)
+//         let popImg = document.createElement('img')
+//         popImg.src = img.src
+//         popup.appendChild(popImg)
+//         document.body.appendChild(popup)
 
-        let close = document.createElement('span')
-            closeText = document.createTextNode('X')
-        close.className = 'close'
-        close.appendChild(closeText)
-        popup.appendChild(close)
-    })
-})
+//         let close = document.createElement('span')
+//             closeText = document.createTextNode('X')
+//         close.className = 'close'
+//         close.appendChild(closeText)
+//         popup.appendChild(close)
+//     })
+// })
 
 // Close Popup
 document.addEventListener('click', (e) => {
@@ -115,4 +115,9 @@ const darkBtn = document.querySelector('.settings-box .status .dark')
 
 darkBtn.addEventListener('click', () => {
     document.body.classList.toggle('dark')
+})
+
+// Show Menu
+const menuBtn = document.querySelector('.menu').addEventListener('click', () => {
+    document.querySelector('.nav ul').classList.toggle('show-ul')
 })
