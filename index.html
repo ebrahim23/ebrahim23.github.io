@@ -82,23 +82,26 @@
     </div>
     <div class="contact-section" id="contact">
       <h2>Contact Me Now &#128512;</h2>
-      <div class="form-box">
-        <h4>Please Fill These Feilds</h4>
-        <form action="">
-          <div class="input-box">
-            <label for="name">Your Name</label>
-            <input type="text" id="f-name"/>
-          </div>
-          <div class="input-box">
-            <label for="email">Your Email</label>
-            <input type="email" id="email"/>
-          </div>
-          <div class="input-box">
-            <label for="message">Type Your Message</label>
-            <textarea name="message" id="message" rows="5"></textarea>
-          </div>
-          <input class="send-btn" type="submit" value="Send Message"/>
-        </form>
+      <div class="box">
+        <div class="form-box">
+          <h4>Please Fill These Feilds</h4>
+          <form action="">
+            <div class="input-box">
+              <label for="name">Your Name</label>
+              <input type="text" id="f-name"/>
+            </div>
+            <div class="input-box">
+              <label for="email">Your Email</label>
+              <input type="email" id="email"/>
+            </div>
+            <div class="input-box">
+              <label for="message">Type Your Message</label>
+              <textarea name="message" id="message" rows="5"></textarea>
+            </div>
+            <input class="send-btn" type="submit" value="Send Message"/>
+          </form>
+        </div>
+        <div class="img-box"><img src="./images/contact.svg" alt=""/></div>
       </div>
     </div>
     <footer>
@@ -117,7 +120,13 @@
       <h4>Choose Your Settings</h4>
       <hr/>
       <div class="colors">
-        <h6>Select a Color</h6><span class="blue"></span><span class="red"></span><span class="green"></span><span class="orange"></span>
+        <h6>Select a Color</h6>
+        <ul>
+          <li class="blue active" data-color="#099496"></li>
+          <li class="red" data-color="red"></li>
+          <li class="green" data-color="green"></li>
+          <li class="orange" data-color="orange"></li>
+        </ul>
       </div>
       <hr/>
       <div class="status">

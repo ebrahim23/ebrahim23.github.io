@@ -1,3 +1,19 @@
+// Localstorage
+let localColors = localStorage.getItem("colors_option");
+if (localColors !== null) {
+  document.body.style.setProperty(
+    "--main-color",
+    localStorage.getItem("colors_option")
+  );
+}
+
+// let modeStorage = localStorage.getItem("dark_mode");
+// if (modeStorage !== null) {
+//   document.body.classList.add("dark");
+// } else {
+//   document.body.classList.remove("dark");
+// }
+
 // Typewriter Effect
 let text =
     "I design and code modern & Interactive websites, and I love what I do.",
@@ -118,6 +134,9 @@ const darkBtn = document.querySelector(".settings-box .status .dark");
 
 darkBtn.addEventListener("click", () => {
   document.body.classList.toggle("dark");
+
+  // Set localStorage
+  // localStorage.setItem("dark_mode", document.body.class("dark"));
 });
 
 // Show Menu
@@ -126,3 +145,22 @@ const menuBtn = document
   .addEventListener("click", () => {
     document.querySelector(".nav ul").classList.toggle("show-ul");
   });
+
+// Colors options
+const arrColors = document.querySelectorAll(".colors ul li");
+
+arrColors.forEach((li) => {
+  li.addEventListener("click", (e) => {
+    document.body.style.setProperty("--main-color", e.target.dataset.color);
+
+    // Set localStorage
+    localStorage.setItem("colors_option", e.target.dataset.color);
+
+    // Active class
+    e.target.parentElement.querySelectorAll(".active").forEach((el) => {
+      el.classList.remove("active");
+      console.log("hello");
+    });
+    e.target.classList.add("active");
+  });
+});
