@@ -7,6 +7,12 @@ if (localColors !== null) {
   );
 }
 
+// document.addEventListener("DOMContentLoaded", function () {
+//   //The first argument are the elements to which the plugin shall be initialized
+//   //The second argument has to be at least a empty object or a object with your desired options
+//   OverlayScrollbars(document.querySelectorAll("body"), {});
+// });
+
 // let modeStorage = localStorage.getItem("dark_mode");
 // if (modeStorage !== null) {
 //   document.body.classList.add("dark");
@@ -159,7 +165,6 @@ arrColors.forEach((li) => {
     // Active class
     e.target.parentElement.querySelectorAll(".active").forEach((el) => {
       el.classList.remove("active");
-      console.log("hello");
     });
     e.target.classList.add("active");
   });
